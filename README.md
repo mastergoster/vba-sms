@@ -1,7 +1,7 @@
 # vba-sms
 envoie de sms en vba api FREE
 
-````
+```
 Sub SendSMS()
     Dim strReturn As String
     Dim Pass As String
@@ -15,10 +15,7 @@ Sub SendSMS()
     strReturn = send(User, Pass, WorksheetFunction.EncodeURL(Message))
     Debug.Print strReturn
 End Sub
-```
 
-
-```
 Function send(User, Pass, Message) As String
     Dim objWinHTTP As Object
     Dim strReturn As String
